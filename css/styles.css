@@ -1,0 +1,102 @@
+header::before{
+  content: "";
+  display: block;
+  width: 200px;
+  background-repeat: no-repeat;
+  top: 0;
+  height: 160px;
+  right: 0;
+  background-image: url("../img/flor.png");
+  position: absolute;
+}
+
+
+.nomes{
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #2A2522;
+}
+
+.nomes p:last-child::after{
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  background-color: #2A2522;
+}
+
+.convidam{
+  padding-top: 20px;
+}
+
+.convidam, .local{
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+}
+
+.convidam p,.local p{
+  text-align: right;
+}
+
+.data{
+  font-weight: 300;
+}
+
+.local{
+padding-top: 20px;
+}
+
+.endereco{
+  font-weight: bold;
+}
+
+.links{
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+  gap: 50px;
+  text-align: center;
+  padding-top: 20px;
+ 
+}
+.links p{
+  text-align: center !important;
+  color: #4C4C4B;
+  font-weight: bold;
+}
+
+footer::before{
+  content: "";
+  display: block;
+  width: 95px;
+  background-repeat: no-repeat;
+  bottom: 0;
+  height: 73px;
+  left: 0;
+  background-image: url("../img/flor-2.png");
+  position: absolute;
+}
+
+
+@media(min-width:700px){
+  .nomes{
+    align-items: center;
+  }
+  .convidam, .local{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .convidam p,.local p{
+    text-align: center;
+  }
+
+  .links{
+    justify-content: center;
+  }
+ 
+}
